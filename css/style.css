@@ -1,0 +1,27 @@
+/*
+ * Style.css
+ * */
+
+body {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #dcdcdc;
+}
+
+
+.navbar-header, hr {
+  min-width: 100%;
+}
+
+// Links
+
+
+.link-repo, a:hover {
+  text-decoration: underline;
+}
+
+.link-repo, a:visited {
+  text-decoration: underline;
+  color: #000;
+}

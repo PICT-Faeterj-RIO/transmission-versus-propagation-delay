@@ -1,11 +1,11 @@
-#Trasmission versus propagation delay
+#Transmission versus propagation delay
 
 ---
 
 ##PICT - FAETERJ-Rio
 
     Applet para cálculo de atraso de propagação e transmissão.
-    
+
 
 
 ##Time:
