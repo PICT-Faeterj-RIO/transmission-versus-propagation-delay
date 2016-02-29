@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redes</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="kurose.js"></script>
+  </head>
+  <body>
+    <form>
+    Tamanho Pacote <select id="tampacote">
+    <option name="tampacote">Selecione uma opção</option>
+    <option name="tampacote" value="100 Bytes">100 Bytes</option>
+    <option name="tampacote" value="500 Bytes">500 Bytes</option>
+    <option name="tampacote" value="1 Kbytes">1 Kbytes</option>
+  </select><br><br>
+    Distância: <select id="dist">
+    <option name="dist">Selecione uma opção</option>
+    <option name="dist" value="10">10 km</option>
+    <option name="dist" value="100">100 km</option>
+    <option name="dist" value="1000">1000 km</option>
+    </select><br><br>
+    Velocidade: <select id="vel">
+    <option name="vel">Selecione uma opção</option>
+    <option name="vel" value="512 Kps">512 Kps</option>
+    <option name="vel" value="1 Mbps">1 Mbps</option>
+    <option name="vel" value="10 Mbps">10 Mbps</option>
+    <option name="vel" value="100 Mbps">100 Mbps</option>
+    </select><br><br>
+    <input type="button" value="Enviar" onclick="calcular();" />
+    </form>
+    <br>
+
+    <p id="incluiraqui"></p>
+
+  </body>
+</html>

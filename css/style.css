@@ -3,7 +3,7 @@
  * */
 
 body {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left: 50px;
   padding-right: 50px;
   background-color: #dcdcdc;
@@ -12,6 +12,10 @@ body {
 
 .navbar-header, hr {
   min-width: 100%;
+}
+
+.text-box {
+  padding-left: 80%;
 }
 
 // Links

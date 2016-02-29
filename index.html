@@ -22,6 +22,7 @@
           <a class="navbar-brand" href="index.html">PICT</a> 
           <hr />
           <p> Um texto aleatório para ficar no lugar dos links </p>
+
         </div>
       </div>
     </nav>
@@ -35,14 +36,35 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4" align="left">
-          <canvas id="primeiro_canvas" width="600" height="400">
+          <canvas id="app-screen" width="700" height="400">
             <p id="canvas_error">
                 Seu navegado não consegue exibir Canvas<br>
                 Procure atualizá-lo
-            </p>
+              </p>
 
+              <script>
+                var canvas = document.getElementById('app-screen');
+                var context = canvas.getContext('2d');
 
-            </canvas>
+                var img_backgr = new Image();
+                img_backgr.src = 'img/cenario.png';
+                var img_transporte = new Image();
+                img_transporte.src = 'img/carrinho.png';
+
+                window.onload = function() {
+                  context.drawImage(img_backgr, 0, 0, 700, 250);
+                  context.drawImage(img_transporte, 70, 150, 130, 70);
+                }
+
+            </script>
+          </canvas>
+        </div>
+        <div class="text-box">
+          <p>
+            <strong>Texto exemplo</strong><br />
+            Esse texte é apenas um exemplo. <br />
+          </p>
+
         </div>
       </div>
     </div>
