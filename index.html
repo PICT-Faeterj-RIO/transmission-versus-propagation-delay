@@ -19,7 +19,7 @@
       <div class="container">
         <div class="navbar-header">
           <img src="img/temp.png" width="5%" align="left" />
-          <a class="navbar-brand" href="index.html">PICT</a> 
+          <a class="navbar-brand" href="index.html">PICT</a>
           <hr />
           <p> Um texto aleatório para ficar no lugar dos links </p>
 
@@ -36,7 +36,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4" align="left">
-          <canvas id="app-screen" width="700" height="400">
+          <canvas id="app-screen" width="800" height="300">
             <p id="canvas_error">
                 Seu navegado não consegue exibir Canvas<br>
                 Procure atualizá-lo
@@ -52,7 +52,7 @@
                 img_transporte.src = 'img/carrinho.png';
 
                 window.onload = function() {
-                  context.drawImage(img_backgr, 0, 0, 700, 250);
+                  context.drawImage(img_backgr, 0, 0, 800, 250);
                   context.drawImage(img_transporte, 70, 150, 130, 70);
                 }
 
@@ -60,8 +60,13 @@
           </canvas>
         </div>
         <div class="text-box">
-          <p>
-            <strong>Texto exemplo</strong><br />
+          <p id="paragraph-todo">
+            <span>TODO:</span> <br />
+            <strong>  Texto exemplo</strong><br />
+            Esse texte é apenas um exemplo. <br />
+            Esse texte é apenas um exemplo. <br />
+            Esse texte é apenas um exemplo. <br />
+            Esse texte é apenas um exemplo. <br />
             Esse texte é apenas um exemplo. <br />
           </p>
 
