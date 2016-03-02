@@ -1,0 +1,90 @@
+/*
+ @Style.scss
+ */
+
+$app-width: 85%;
+
+body {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #dcdcdc;
+}
+
+.logo {
+  max-width: 15%;
+  min-width: 10%;
+}
+
+
+.navbar-header {
+  hr {
+    min-width: 100%;
+  }
+}
+
+// Titulo
+
+.jumbotron {
+  margin-top: 30px;
+}
+
+#logo {
+  float: left;
+  width: 5%;
+  padding-top: 9px;
+}
+
+// App
+
+#app-screen {
+  width: 900px;
+  height: 300px;
+  background-color: aqua;
+  float: left;
+}
+
+#canvas-error {
+  background-color: crimson;
+  font-family: monospace;
+  font-size: 26px;
+  align-content: center;
+}
+
+// Campo texto
+
+.text-box {
+  padding-left: 85%;
+
+  #paragraph-todo {
+    background-color: #ffff00;
+    text-indent: 5px;
+    padding-left: 5px;
+    
+    .btn {
+      align-self: center;
+    }
+  
+    span {
+      font-family: verdana;
+    }
+  }
+}
+
+
+// Links
+
+
+.link-repo {
+  a {
+    text-decoration: underline;
+    &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+    &:visited {
+       color: #000;
+    }
+  }
+}
+

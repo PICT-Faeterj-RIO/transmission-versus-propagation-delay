@@ -1,47 +1,56 @@
 /*
- * Style.css
- * */
-
+ @Style.scss
+ */
 body {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #dcdcdc;
-}
+  background-color: #dcdcdc; }
 
+.logo {
+  max-width: 15%;
+  min-width: 10%; }
 
-.navbar-header, hr {
-  min-width: 100%;
-}
+.navbar-header hr {
+  min-width: 100%; }
 
-.text-box {
-  padding-left: 75%;
-  min-heigth: 300px;
-  min-width: 300px;
-}
-#paragraph-todo {
-  background-color: #ffff00;
-  text-indent: 5px;
-  padding-left: 5px;
-}
+.jumbotron {
+  margin-top: 30px; }
 
-#paragraph-todo, span {
-  font-family: verdana;
-}
+#logo {
+  float: left;
+  width: 5%;
+  padding-top: 9px; }
 
 #app-screen {
-  border: collapse;
-}
+  width: 900px;
+  height: 300px;
+  background-color: aqua;
+  float: left; }
 
-// Links
+#canvas-error {
+  background-color: crimson;
+  font-family: monospace;
+  font-size: 26px;
+  align-content: center; }
 
+.text-box {
+  padding-left: 85%; }
+  .text-box #paragraph-todo {
+    background-color: #ffff00;
+    text-indent: 5px;
+    padding-left: 5px; }
+    .text-box #paragraph-todo .btn {
+      align-self: center; }
+    .text-box #paragraph-todo span {
+      font-family: verdana; }
 
-.link-repo, a:hover {
-  text-decoration: underline;
-}
+.link-repo a {
+  text-decoration: underline; }
+  .link-repo a:hover {
+    color: #fff;
+    text-decoration: none; }
+  .link-repo a:visited {
+    color: #000; }
 
-.link-repo, a:visited {
-  text-decoration: underline;
-  color: #000;
-}
-
+/*# sourceMappingURL=style.css.map */

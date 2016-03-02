@@ -2,27 +2,31 @@
 <html>
   <head>
     <title>PICT - Atraso de trnasmissão e propagação</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <img src="img/temp.png" width="5%" align="left" />
+          <img src="img/temp.png" id="logo">
           <a class="navbar-brand" href="index.html">PICT</a>
-          <hr />
+          <ul class="nav navbar-nav	navbar-top">
+		    <li><a href="#">Quem somos</a></li>
+			<li><a href="#">Documentação</a></li>
+			<li><a href="#">Aplicativos</a></li>
+		  </ul>
+          <hr >
           <p> Um texto aleatório para ficar no lugar dos links </p>
-
         </div>
       </div>
     </nav>
@@ -33,53 +37,49 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4" align="left">
-          <canvas id="app-screen" width="800" height="300">
-            <p id="canvas_error">
-                Seu navegado não consegue exibir Canvas<br>
-                Procure atualizá-lo
-              </p>
+    <div class="container">    
+      <div class="col-md-10">
+        <canvas id="app-screen" width="900px" height="300px">
+          <p id="canvas-error">
+              Seu navegado não consegue exibir Canvas<br>
+              Procure atualizá-lo
+            </p>
+            <script>
+              var canvas = document.getElementById('app-screen');
+              var context = canvas.getContext('2d');
 
-              <script>
-                var canvas = document.getElementById('app-screen');
-                var context = canvas.getContext('2d');
+              var img_backgr = new Image();
+              img_backgr.src = 'img/cenario.png';
+              var img_transporte = new Image();
+              img_transporte.src = 'img/carrinho.png';
 
-                var img_backgr = new Image();
-                img_backgr.src = 'img/cenario.png';
-                var img_transporte = new Image();
-                img_transporte.src = 'img/carrinho.png';
+              window.onload = function() {
+                context.drawImage(img_backgr, 0, 0, canvas.clientWidth, canvas.clientHeight);
+                context.drawImage(img_transporte, 75, 200, 130, 70);
+              }
 
-                window.onload = function() {
-                  context.drawImage(img_backgr, 0, 0, 800, 250);
-                  context.drawImage(img_transporte, 70, 150, 130, 70);
-                }
+          </script>
+        </canvas>
+      </div>
+      <div class="text-box">
+        <p id="paragraph-todo">
+          <span>TODO:</span> <br>
+          <strong>  Texto exemplo</strong><br>
+          Esse texte é apenas um exemplo. <br>
+          Esse texte é apenas um exemplo. <br>
+          Esse texte é apenas um exemplo. <br>
+          Esse texte é apenas um exemplo. <br>
+          Esse texte é apenas um exemplo. <br>
+        </p>
 
-            </script>
-          </canvas>
-        </div>
-        <div class="text-box">
-          <p id="paragraph-todo">
-            <span>TODO:</span> <br />
-            <strong>  Texto exemplo</strong><br />
-            Esse texte é apenas um exemplo. <br />
-            Esse texte é apenas um exemplo. <br />
-            Esse texte é apenas um exemplo. <br />
-            Esse texte é apenas um exemplo. <br />
-            Esse texte é apenas um exemplo. <br />
-          </p>
-
-        </div>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Veja mais!</a>
       </div>
     </div>
 
     <small class="link-repo">
-      <hr />
-      <a href="https://github.com/PICT-Faeterj-RIO" alt="Github PICT" name="PICT - Github" >FAETERJ - Rio, PICT </a>
+      <hr>
+      <a href="https://github.com/PICT-Faeterj-RIO" target="_blank" alt="Github PICT" name="PICT - Github" >FAETERJ - Rio, PICT </a>
     </small>
-
-
   </body>
 </html>
 
