@@ -2,32 +2,36 @@
  @Style.scss
  */
 
-$app-width: 85%;
-
 body {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #dcdcdc;
 }
 
-.logo {
-  max-width: 15%;
-  min-width: 10%;
+.pict-background {
+  background-color: #4169E1;
+  border-color: #1E90FF;
 }
 
-
-.navbar-header {
-  hr {
-    min-width: 100%;
+.navbar-brand {
+  padding-top: 15px;
+  color: wheat;
+  font-size: 25px;
+  &:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: #DCDCDC;
   }
 }
 
-// Titulo
-
-.jumbotron {
-  margin-top: 30px;
+.list-inline {
+  .navbar-brand {
+    font-size: 17px;
+    padding-left: 30px;
+    }
 }
+
+// Titulo
 
 #logo {
   float: left;
@@ -54,37 +58,33 @@ body {
 // Campo texto
 
 .text-box {
-  padding-left: 85%;
-
-  #paragraph-todo {
-    background-color: #ffff00;
-    text-indent: 5px;
-    padding-left: 5px;
-    
-    .btn {
-      align-self: center;
-    }
-  
-    span {
-      font-family: verdana;
-    }
-  }
+  background-image: url('images/postit.png');
+  background-size: cover;
 }
 
 
 // Links
 
-
-.link-repo {
-  a {
-    text-decoration: underline;
-    &:hover {
-    color: #fff;
-    text-decoration: none;
-  }
+footer {
+  margin-top: 10px;
+  .navbar-brand {
+    color: black;
+    font-size: 16px;
+    a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: blue;
+    }
     &:visited {
-       color: #000;
+      color: black;
     }
   }
+  
+  .navbar-brand-2 {
+      font-size: 11px;
+    }
+  .msg-coffee {
+    text-decoration: underline;
+    padding-bottom: 5px;
+  }
 }
-

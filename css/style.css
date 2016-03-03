@@ -2,20 +2,25 @@
  @Style.scss
  */
 body {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: #dcdcdc; }
 
-.logo {
-  max-width: 15%;
-  min-width: 10%; }
+.pict-background {
+  background-color: #4169E1;
+  border-color: #1E90FF; }
 
-.navbar-header hr {
-  min-width: 100%; }
+.navbar-brand {
+  padding-top: 15px;
+  color: wheat;
+  font-size: 25px; }
+  .navbar-brand:hover {
+    background-color: transparent;
+    text-decoration: underline; }
+  .navbar-brand:visited {
+    color: #DCDCDC; }
 
-.jumbotron {
-  margin-top: 30px; }
+.list-inline .navbar-brand {
+  font-size: 17px;
+  padding-left: 30px; }
 
 #logo {
   float: left;
@@ -35,22 +40,24 @@ body {
   align-content: center; }
 
 .text-box {
-  padding-left: 85%; }
-  .text-box #paragraph-todo {
-    background-color: #ffff00;
-    text-indent: 5px;
-    padding-left: 5px; }
-    .text-box #paragraph-todo .btn {
-      align-self: center; }
-    .text-box #paragraph-todo span {
-      font-family: verdana; }
+  background-image: url("images/postit.png");
+  background-size: cover; }
 
-.link-repo a {
-  text-decoration: underline; }
-  .link-repo a:hover {
-    color: #fff;
-    text-decoration: none; }
-  .link-repo a:visited {
-    color: #000; }
+footer {
+  margin-top: 10px; }
+  footer .navbar-brand {
+    color: black;
+    font-size: 16px; }
+    footer .navbar-brand a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: blue; }
+    footer .navbar-brand:visited {
+      color: black; }
+  footer .navbar-brand-2 {
+    font-size: 11px; }
+  footer .msg-coffee {
+    text-decoration: underline;
+    padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */

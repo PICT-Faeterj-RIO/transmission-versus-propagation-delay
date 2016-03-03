@@ -15,71 +15,101 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
+    <nav class="navbar navbar-default pict-background" role="navigation">
+      <div class="container-fluid">
         <div class="navbar-header">
-          <img src="img/temp.png" id="logo">
-          <a class="navbar-brand" href="index.html">PICT</a>
-          <ul class="nav navbar-nav	navbar-top">
-		    <li><a href="#">Quem somos</a></li>
-			<li><a href="#">Documentação</a></li>
-			<li><a href="#">Aplicativos</a></li>
+          <img src="img/temp.png" width="5%" align="left" class="img-responsive">
+          <a class="navbar-brand" href="index.html" target="_self">PICT</a>
+          <ul class="list-inline">
+		    <li><a href="#" class="navbar-brand" target="_blank">Quem somos</a></li>
+			<li><a href="#" class="navbar-brand" target="_blank">Documentação</a></li>
+			<li><a href="#" class="navbar-brand" target="_blank">Aplicativos</a></li>
 		  </ul>
-          <hr >
-          <p> Um texto aleatório para ficar no lugar dos links </p>
         </div>
       </div>
     </nav>
 
     <div class="jumbotron">
+      <div class="container-fluid">
+        <h3 class="text-center">Atraso de Propagação x Transmissão</h3>
+        <hr style="border: 1px ridge black">
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7">
+          <form role="form">
+           <div class="form-group">
+             <label for="tamanho">
+               Tamanho do pacote:
+             </label>
+             <select class="form-control" required>
+               <option name="tampacote" disabled selected>Selecione um tamanho</option>
+               <option name="tampacote" value="100 Bytes">100 Bytes</option>
+               <option name="tampacote" value="500 Bytes">500 Bytes</option>
+               <option name="tampacote" value="1 Kbytes">1 Kbytes</option>
+             </select>
+             <label for="velocidade">
+               Velocidade:
+             </label>
+             <select class="form-control" required>
+               <option name="vel" disabled selected>Selecione uma velocidade</option>
+               <option name="vel" value="512 Kps">512 Kps</option>
+               <option name="vel" value="1 Mbps">1 Mbps</option>
+               <option name="vel" value="10 Mbps">10 Mbps</option>
+               <option name="vel" value="100 Mbps">100 Mbps</option>
+             </select>
+             <label for="dist">
+               Distância:
+             </label>
+             <select class="form-control" required>
+               <option name="dist" disabled selected>Selecione uma distância</option>
+               <option name="dist" value="10">10 km</option>
+               <option name="dist" value="100">100 km</option>
+               <option name="dist" value="1000">1000 km</option>
+             </select>
+             
+             <br><br><br><br><br>
+             <h1>App</h1>
+             <br><br><br><br><br>
+             
+             <input type="reset" value="Limpar" class="btn btn-danger">
+             <input type="submit" value="Começar" class="btn btn-primary">
+             <input type="button" value="Parar" class="btn btn-warning">
+             
+           </div>            
+          </form>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
+          <img src="img/postit.png" width="70%" class="image-responsive">
+          <br>
+          <a href="#" target="_blank"><button type="button" class="btn btn-danger">Leia mais aqui!</button></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="navbar navbar-static-bottom navbar-default" role="navigation">
       <div class="container">
-        <h3>Atraso de Propagação e Transmissão</h3>
+        <div class="col-md-6">
+          <div class="navbar-header">
+            <strong class="navbar-brand"><a href="http://www.faeterj-rio.edu.br/" target="_blank">FAETERJ-Rio, </a>
+            <a href="index.html" target="_self">PICT</a></strong>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <small class="navbar-brand-2">
+             <ul class="list-inline">
+                <li><a href="#" target="_blank">Documentação</a></li>
+		        <li><a href="#" target="_blank">Github</a></li>
+                <li><a href="#" target="_blank">Contato</a></li>
+              </ul>
+           </small>
+        </div>
+        <span  class="msg-coffee col-md-12 text-center">
+          <a href="#" target="_blank">Quer fazer um Desenvolvedor feliz? <button type="button" class="btn btn-info">Doe um café!</button></a>
+        </span>
       </div>
-    </div>
-
-    <div class="container">    
-      <div class="col-md-10">
-        <canvas id="app-screen" width="900px" height="300px">
-          <p id="canvas-error">
-              Seu navegado não consegue exibir Canvas<br>
-              Procure atualizá-lo
-            </p>
-            <script>
-              var canvas = document.getElementById('app-screen');
-              var context = canvas.getContext('2d');
-
-              var img_backgr = new Image();
-              img_backgr.src = 'img/cenario.png';
-              var img_transporte = new Image();
-              img_transporte.src = 'img/carrinho.png';
-
-              window.onload = function() {
-                context.drawImage(img_backgr, 0, 0, canvas.clientWidth, canvas.clientHeight);
-                context.drawImage(img_transporte, 75, 200, 130, 70);
-              }
-
-          </script>
-        </canvas>
-      </div>
-      <div class="text-box">
-        <p id="paragraph-todo">
-          <span>TODO:</span> <br>
-          <strong>  Texto exemplo</strong><br>
-          Esse texte é apenas um exemplo. <br>
-          Esse texte é apenas um exemplo. <br>
-          Esse texte é apenas um exemplo. <br>
-          Esse texte é apenas um exemplo. <br>
-          Esse texte é apenas um exemplo. <br>
-        </p>
-
-        <a class="btn btn-primary btn-lg" href="#" role="button">Veja mais!</a>
-      </div>
-    </div>
-
-    <small class="link-repo">
-      <hr>
-      <a href="https://github.com/PICT-Faeterj-RIO" target="_blank" alt="Github PICT" name="PICT - Github" >FAETERJ - Rio, PICT </a>
-    </small>
+    </footer>
   </body>
 </html>
-
