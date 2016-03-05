@@ -40,19 +40,16 @@ body {
   width: 5%;
   padding-top: 9px; }
 
-form {
-  padding-bottom: 10%; }
-  form .container-fluid {
-    padding-bottom: 10px;
-    padding-top: 10px; }
-    form .container-fluid #app-screen {
-      width: 100%;
-      background-color: aqua; }
-  form #canvas-error {
-    background-color: crimson;
-    font-family: monospace;
-    font-size: 26px;
-    align-content: center; }
+form .container-fluid {
+  padding-bottom: 2%;
+  padding-top: 2%; }
+  form .container-fluid #app-screen {
+    width: 100%; }
+form #canvas-error {
+  background-color: crimson;
+  font-family: monospace;
+  font-size: 26px;
+  align-content: center; }
 
 .post-it {
   width: 100%; }
@@ -77,5 +74,12 @@ footer {
     text-decoration: underline;
     padding-top: 15px;
     padding-bottom: 5px; }
+
+.aplicativos {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -61,11 +61,10 @@ body {
 form {
   
   .container-fluid {
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 2%;
+    padding-top: 2%;
     #app-screen {
       width: 100%;
-      background-color: aqua;
     }
   }
 
@@ -75,7 +74,6 @@ form {
     font-size: 26px;
     align-content: center;
   }
-  padding-bottom: 10%;
 }
 
 // Campo texto
@@ -112,4 +110,14 @@ footer {
     padding-top: 15px;
     padding-bottom: 5px;
   }
+}
+
+// Aplicativos
+
+.aplicativos {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-decoration: underline;
+  padding-top: 10px;
+  font-size: 15px;
 }
