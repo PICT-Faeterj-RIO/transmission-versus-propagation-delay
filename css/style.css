@@ -6,21 +6,30 @@ body {
 
 .pict-background {
   background-color: #4169E1;
-  border-color: #1E90FF; }
+  border-color: #1E90FF;
+  border-bottom-style: dashed; }
 
-.navbar-brand {
-  padding-top: 15px;
-  color: wheat;
-  font-size: 25px; }
-  .navbar-brand:hover {
-    background-color: transparent;
-    text-decoration: underline; }
-  .navbar-brand:visited {
-    color: #DCDCDC; }
+.navbar-brand-modified {
+  color: aliceblue;
+  font-size: 35px;
+  background-color: transparent; }
+  .navbar-brand-modified a:hover {
+    color: azure; }
+  .navbar-brand-modified a:visited {
+    color: #dcdcdc; }
+  .navbar-brand-modified a:active {
+    color: aliceblue; }
 
-.list-inline .navbar-brand {
-  font-size: 17px;
-  padding-left: 30px; }
+.col-md-3 .container {
+  padding-top: 5%;
+  margin-left: -10%; }
+
+.col-md-8 .container {
+  padding-top: 5%; }
+  .col-md-8 .container .navbar-brand-modified {
+    font-size: 17px;
+    text-decoration: underline;
+    padding-left: 15px; }
 
 #logo {
   float: left;
