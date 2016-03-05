@@ -16,30 +16,30 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default pict-background" role="navigation">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="navbar-header">
-              <div class="col-md-1">
-                <img src="img/temp.png" align="left" class="img-responsive">
-              </div>
-              <div class="col-md-3">
-                <div class="container">
-                  <a class="navbar-brand-modified" href="index.html" target="_self">PICT</a>
-                </div>
-              </div>
-              <div class="col-md-8">
-               <div class="container">
-                  <a href="quemsomos.html" class="navbar-brand-modified" target="_blank">Quem somos</a>
-                  <a href="#" class="navbar-brand-modified" target="_blank">Documentação</a>
-                  <a href="#" class="navbar-brand-modified"
-                  target="_blank">Aplicativos</a>
-                </div>
+    <div class="container-fluid">
+      <nav class="navbar navbar-default pict-background" role="navigation">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img src="img/temp.png" align="left" class="img-responsive">
+            </div>
+            <div class="col-md-1">
+              <div class="container-fluid">
+                <a class="navbar-brand-modified" href="index.html" target="_self">PICT</a>
               </div>
             </div>
+            <div class="col-md-10">
+             <div class="container-fluid">
+                <a href="quemsomos.html" class="navbar-brand-modified" target="_self">Quem somos</a>
+                <a href="#" class="navbar-brand-modified" target="_self">Documentação</a>
+                <a href="#" class="navbar-brand-modified"
+                target="_self">Aplicativos</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
 
     <div class="jumbotron">
       <div class="container-fluid">
@@ -47,8 +47,8 @@
         <hr style="border: 1px ridge black">
       </div>
     </div>
-    
-    <div class="container">
+
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-7 col-lg-7">
           <form role="form">
@@ -81,27 +81,45 @@
                <option name="dist" value="100">100 km</option>
                <option name="dist" value="1000">1000 km</option>
              </select>
-             
-             <br><br><br><br><br>
-             <h1>App</h1>
-             <br><br><br><br><br>
-             
+
+             <div class="container-fluid">
+               <canvas class="img-responsive" id="app-screen">
+                 <script>
+                    var canvas = document.getElementById('app-screen');
+                    var context = canvas.getContext('2d');
+
+
+                    var imagem = new Image();
+                    imagem.src = 'img/cenario.png';
+                    imagem.onload = function() {
+                      context.drawImage(imagem, 0, 0, canvas.width, canvas.height)
+                    }
+                 </script>
+
+               </canvas>
+             </div>
+
              <input type="reset" value="Limpar" class="btn btn-danger">
              <input type="submit" value="Começar" class="btn btn-primary">
              <input type="button" value="Parar" class="btn btn-warning">
-             
+
            </div>            
           </form>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5">
-          <img src="img/postit.png" width="70%" class="image-responsive">
+          <div class="container-fluid">
+            <img src="img/postit.png">
+          </div>
           <br>
-          <a href="#" target="_blank"><button type="button" class="btn btn-danger">Leia mais aqui!</button></a>
+          <div class="center-button">
+            <a href="#" target="_blank"><button type="button" class="btn btn-danger">Leia mais aqui!</button></a>
+          </div>
         </div>
       </div>
     </div>
 
-    <footer class="navbar navbar-static-bottom navbar-default" role="navigation">
+
+    <footer class="navbar navbar-default footer" role="navigation">
       <div class="container">
         <div class="col-md-6">
           <div class="navbar-header">
@@ -113,7 +131,7 @@
           <small class="navbar-brand-2">
              <ul class="list-inline">
                 <li><a href="#" target="_blank">Documentação</a></li>
-		        <li><a href="#" target="_blank">Github</a></li>
+                <li><a href="#" target="_blank">Github</a></li>
                 <li><a href="#" target="_blank">Contato</a></li>
               </ul>
            </small>

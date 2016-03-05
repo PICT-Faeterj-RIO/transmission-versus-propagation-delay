@@ -4,12 +4,14 @@
 
 body {
   background-color: #dcdcdc;
+  background-size: auto;
 }
 
 .pict-background {
-  background-color: #4169E1;
-  border-color: #1E90FF;
+  background-color: #43688c;
+  border-color: #43686a;
   border-bottom-style: dashed;
+  padding-bottom: 1%;
 }
 
 .navbar-brand-modified {
@@ -27,15 +29,16 @@ body {
   }
 }
 
-.col-md-3 {
-  .container {
-    padding-top: 5%;
-    margin-left: -10%;
+.col-md-1 {
+  .container-fluid {
+    padding-top: 15%;
+    margin-left: -5%;
   }
 }
 
-.col-md-8 {
-  .container {
+.col-md-10 {
+  padding-left: 20%;
+  .container-fluid {
     padding-top: 5%;
     .navbar-brand-modified {
       font-size: 17px;
@@ -55,32 +58,39 @@ body {
 
 // App
 
-#app-screen {
-  width: 900px;
-  height: 300px;
-  background-color: aqua;
-  float: left;
-}
+form {
+  
+  .container-fluid {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    #app-screen {
+      width: 100%;
+      background-color: aqua;
+    }
+  }
 
-#canvas-error {
-  background-color: crimson;
-  font-family: monospace;
-  font-size: 26px;
-  align-content: center;
+  #canvas-error {
+    background-color: crimson;
+    font-family: monospace;
+    font-size: 26px;
+    align-content: center;
+  }
+  padding-bottom: 10%;
 }
 
 // Campo texto
 
-.text-box {
-  background-image: url('images/postit.png');
-  background-size: cover;
+.post-it {
+  width: 100%;
 }
-
+.center-button {
+  padding-left: 50%;
+}
 
 // Links
 
 footer {
-  margin-top: 10px;
+  padding-top: 10px;
   .navbar-brand {
     color: black;
     font-size: 16px;
@@ -99,6 +109,7 @@ footer {
     }
   .msg-coffee {
     text-decoration: underline;
+    padding-top: 15px;
     padding-bottom: 5px;
   }
 }

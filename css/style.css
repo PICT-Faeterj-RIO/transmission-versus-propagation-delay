@@ -2,12 +2,14 @@
  @Style.scss
  */
 body {
-  background-color: #dcdcdc; }
+  background-color: #dcdcdc;
+  background-size: auto; }
 
 .pict-background {
-  background-color: #4169E1;
-  border-color: #1E90FF;
-  border-bottom-style: dashed; }
+  background-color: #43688c;
+  border-color: #43686a;
+  border-bottom-style: dashed;
+  padding-bottom: 1%; }
 
 .navbar-brand-modified {
   color: aliceblue;
@@ -20,40 +22,46 @@ body {
   .navbar-brand-modified a:active {
     color: aliceblue; }
 
-.col-md-3 .container {
-  padding-top: 5%;
-  margin-left: -10%; }
+.col-md-1 .container-fluid {
+  padding-top: 15%;
+  margin-left: -5%; }
 
-.col-md-8 .container {
-  padding-top: 5%; }
-  .col-md-8 .container .navbar-brand-modified {
-    font-size: 17px;
-    text-decoration: underline;
-    padding-left: 15px; }
+.col-md-10 {
+  padding-left: 20%; }
+  .col-md-10 .container-fluid {
+    padding-top: 5%; }
+    .col-md-10 .container-fluid .navbar-brand-modified {
+      font-size: 17px;
+      text-decoration: underline;
+      padding-left: 15px; }
 
 #logo {
   float: left;
   width: 5%;
   padding-top: 9px; }
 
-#app-screen {
-  width: 900px;
-  height: 300px;
-  background-color: aqua;
-  float: left; }
+form {
+  padding-bottom: 10%; }
+  form .container-fluid {
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    form .container-fluid #app-screen {
+      width: 100%;
+      background-color: aqua; }
+  form #canvas-error {
+    background-color: crimson;
+    font-family: monospace;
+    font-size: 26px;
+    align-content: center; }
 
-#canvas-error {
-  background-color: crimson;
-  font-family: monospace;
-  font-size: 26px;
-  align-content: center; }
+.post-it {
+  width: 100%; }
 
-.text-box {
-  background-image: url("images/postit.png");
-  background-size: cover; }
+.center-button {
+  padding-left: 50%; }
 
 footer {
-  margin-top: 10px; }
+  padding-top: 10px; }
   footer .navbar-brand {
     color: black;
     font-size: 16px; }
@@ -67,6 +75,7 @@ footer {
     font-size: 11px; }
   footer .msg-coffee {
     text-decoration: underline;
+    padding-top: 15px;
     padding-bottom: 5px; }
 
 /*# sourceMappingURL=style.css.map */
