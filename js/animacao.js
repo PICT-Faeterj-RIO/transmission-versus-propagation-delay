@@ -29,3 +29,4 @@ function play(){
 function stop(){
   clearInterval(timer);
 }
+
