@@ -2,14 +2,18 @@
  @Style.scss
  */
 
+$blue-grayer: #43688c;
+$dark-blue-grayer: #43686a;
+$neutral-gray: #dcdcdc;
+
 body {
-  background-color: #dcdcdc;
+  background-color: $neutral-gray;
   background-size: auto;
 }
 
 .pict-background {
-  background-color: #43688c;
-  border-color: #43686a;
+  background-color: $blue-grayer;
+  border-color: $dark-blue-grayer;
   border-bottom-style: dashed;
   padding-bottom: 1%;
 }
@@ -22,7 +26,7 @@ body {
     color: azure;
   }
   a:visited {
-    color: #dcdcdc;
+    color: $neutral-gray;
   }
   a:active {
     color: aliceblue;
