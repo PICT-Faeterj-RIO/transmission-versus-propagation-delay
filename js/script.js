@@ -43,6 +43,7 @@ function calcular()
   if(pacote=="Selecione um tamanho" || velocidade=="Selecione uma velocidade" || distancia=="Selecione uma distância"){
     alert("Um dos campos está vazio.");
   }else{
+    play();
     document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs. <br>" +
     "Atraso de propagação: " + prop_cien + " segs. <br>" + "Atraso total: " + atrasototal_cien + " segs."
   }
@@ -70,3 +71,4 @@ function converter(pacote)
 
   return b;
 }
+
