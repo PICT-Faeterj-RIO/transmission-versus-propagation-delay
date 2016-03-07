@@ -40,9 +40,12 @@ function calcular()
   var atrasototal=transmissao+propagacao;
   var atrasototal_cien=converter(atrasototal);
 
-  alert("Atraso de transmissão: " + trans_cien + " segs. \n" +
-  "Atraso de propagação: " + prop_cien + " segs. \n" + "Atraso total: " + atrasototal_cien + " segs.");
-
+  if(pacote=="Selecione um tamanho" || velocidade=="Selecione uma velocidade" || distancia=="Selecione uma distância"){
+    alert("Um dos campos está vazio.");
+  }else{
+    document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs. <br>" +
+    "Atraso de propagação: " + prop_cien + " segs. <br>" + "Atraso total: " + atrasototal_cien + " segs."
+  }
 }
 
 function posicao(pacote)

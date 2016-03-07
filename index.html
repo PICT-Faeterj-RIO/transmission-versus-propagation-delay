@@ -8,6 +8,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/animacao.js"></script>
 
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -91,18 +92,30 @@
 
 
                     var imagem = new Image();
+
                     imagem.src = 'img/cenario.png';
+
                     imagem.onload = function() {
                       context.drawImage(imagem, 0, 0, canvas.width, canvas.height-50);
+                    }
+
+                    var imagem2 = new Image();
+
+                    imagem2.src= 'img/carrinho.png';
+
+                    imagem2.onload = function() {
+                      context.drawImage(imagem2, 30, 58, 64, 32);
                     }
                  </script>
 
                </canvas>
              </div>
 
-             <input type="reset" value="Limpar" class="btn btn-danger">
-             <input type="button" value="Começar" onclick="calcular();" class="btn btn-primary">
-             <input type="button" value="Parar" class="btn btn-warning">
+             <p id="resultado"></p>
+
+             <input type="button" value="Limpar" onclick="resetar();" class="btn btn-danger">
+             <input type="button" value="Começar" onclick="calcular(), play();" class="btn btn-primary">
+             <input type="button" value="Parar" onclick="stop();" class="btn btn-warning">
 
            </div>
           </form>
