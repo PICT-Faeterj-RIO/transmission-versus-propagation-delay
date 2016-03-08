@@ -85,7 +85,7 @@
              </select>
 
              <div class="container-fluid">
-               <canvas class="img-responsive" id="app-screen">
+               <canvas width="659" height="200" class="img-responsive" id="app-screen">
                  <script>
                     var canvas = document.getElementById('app-screen');
                     var context = canvas.getContext('2d');
@@ -96,7 +96,7 @@
                     imagem.src = 'img/cenario.png';
 
                     imagem.onload = function() {
-                      context.drawImage(imagem, 0, 0, canvas.width, canvas.height-50);
+                      context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
                     }
 
                     var imagem2 = new Image();
@@ -104,7 +104,7 @@
                     imagem2.src= 'img/carrinho.png';
 
                     imagem2.onload = function() {
-                      context.drawImage(imagem2, 30, 58, 64, 32);
+                      context.drawImage(imagem2, 100, 116, 96, 64);
                     }
                  </script>
 
@@ -157,4 +157,3 @@
     </footer>
   </body>
 </html>
-
