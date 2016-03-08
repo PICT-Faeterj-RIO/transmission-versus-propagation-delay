@@ -6,6 +6,11 @@ function calcular()
   var distancia = document.getElementById("dist").value; // distância total que o pacote irá percorrer
   var indice = 2 * 1E8; // índice de velocidade de propagação
 
+  if(pacote=="Selecione um tamanho" || velocidade=="Selecione uma velocidade" || distancia=="Selecione uma distância"){
+    alert("Um dos campos está vazio.");
+    return;
+  }
+
   //pega a posicao em que acaba a medida e corta a string
   var pospacote=posicao(pacote);
   var tampacote=pacote.substring(0,pospacote);
@@ -41,13 +46,9 @@ function calcular()
   var atrasototal=transmissao+propagacao;
   var atrasototal_cien=converter(atrasototal);
 
-  if(pacote=="Selecione um tamanho" || velocidade=="Selecione uma velocidade" || distancia=="Selecione uma distância"){
-    alert("Um dos campos está vazio.");
-  }else{
-    play();
-    document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs. <br>" +
-    "Atraso de propagação: " + prop_cien + " segs. <br>" + "Atraso total: " + atrasototal_cien + " segs."
-  }
+  play();
+  document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs. <br>" +
+  "Atraso de propagação: " + prop_cien + " segs. <br>" + "Atraso total: " + atrasototal_cien + " segs."
 }
 
 function posicao(pacote)
@@ -72,4 +73,3 @@ function converter(pacote)
 
   return b;
 }
-
