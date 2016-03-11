@@ -51,11 +51,19 @@ form #canvas-error {
   font-size: 26px;
   align-content: center; }
 
-.post-it {
-  width: 100%; }
+#post-it {
+  background-image: url(../img/postit.png);
+  height: 100%;
+  background-repeat: no-repeat; }
+  #post-it p {
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    font-family: cursive; }
 
 .center-button {
-  padding-left: 50%; }
+  padding-left: 25%; }
 
 footer {
   padding-top: 10px; }

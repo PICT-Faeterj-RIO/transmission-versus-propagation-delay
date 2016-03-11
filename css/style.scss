@@ -38,6 +38,7 @@ body {
     padding-top: 15%;
     margin-left: -5%;
   }
+          
 }
 
 .col-md-10 {
@@ -82,11 +83,20 @@ form {
 
 // Campo texto
 
-.post-it {
-  width: 100%;
+#post-it {
+  background-image: url(../img/postit.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  p {
+    padding-top: 10%;
+    padding-left: 3%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    font-family: cursive;
+  }
 }
 .center-button {
-  padding-left: 50%;
+  padding-left: 25%;
 }
 
 // Links
