@@ -95,32 +95,60 @@
              <div class="container-fluid">
                <canvas width="659" height="200" class="img-responsive" id="app-screen">
                  <script>
+                    var situ = 1;
                     var canvas = document.getElementById('app-screen');
                     var context = canvas.getContext('2d');
 
+                    if(situ==1){
+                      var imagem = new Image();
 
-                    var imagem = new Image();
+                      imagem.src = 'img/cenario1.png';
 
-                    imagem.src = 'img/cenario.png';
+                      imagem.onload = function() {
+                        context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
+                      }
 
-                    imagem.onload = function() {
-                      context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
+                      var imagem2 = new Image();
+
+                      imagem2.src= 'img/pacote.png';
+
+                      imagem2.onload = function() {
+                        context.drawImage(imagem2, 25, 130, 40, 40);
+                      }
+
+                      var imagem3 = new Image();
+
+                      imagem3.src= 'img/pacote.png';
+
+                      imagem3.onload = function() {
+                        context.drawImage(imagem3, 25, 130, 40, 40);
+                      }
                     }
 
-                    var imagem2 = new Image();
+                    if(situ==2){
+                      var imagem = new Image();
 
-                    imagem2.src= 'img/carrinho.png';
+                      imagem.src = 'img/cenario2.png';
 
-                    imagem2.onload = function() {
-                      context.drawImage(imagem2, 100, 116, 96, 64);
-                    }
+                      imagem.onload = function() {
+                        context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
+                      }
 
-                    var imagem3 = new Image();
+                      var imagem2 = new Image();
 
-                    imagem3.src= 'img/pacote.png';
+                      imagem2.src= 'img/caminhao.png';
 
-                    imagem3.onload = function() {
-                      context.drawImage(imagem3, 25, 130, 40, 40);
+                      imagem2.onload = function() {
+                        context.drawImage(imagem2, 100, 116, 96, 64);
+                      }
+
+                      var imagem3 = new Image();
+
+                      imagem3.src= 'img/pacote.png';
+
+                      imagem3.onload = function() {
+                        context.drawImage(imagem3, 25, 130, 40, 40);
+                      }
                     }
                  </script>
 
