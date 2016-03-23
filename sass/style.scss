@@ -3,7 +3,7 @@
  */
 
 $blue-grayer: #43688c;
-$dark-blue-grayer: #43686a;
+$dark-blue-grayer: #53989a;
 $neutral-gray: #dcdcdc;
 
 body {
@@ -19,37 +19,29 @@ body {
 }
 
 .navbar-brand-modified {
-  color: aliceblue;
   font-size: 35px;
   background-color: transparent;
-  a:hover {
-    color: azure;
-  }
-  a:visited {
-    color: $neutral-gray;
-  }
-  a:active {
+  a {
     color: aliceblue;
-  }
-}
-
-.col-md-1 {
-  .container-fluid {
-    padding-top: 15%;
-    margin-left: -5%;
-  }
-          
-}
-
-.col-md-10 {
-  padding-left: 20%;
-  .container-fluid {
-    padding-top: 5%;
-    .navbar-brand-modified {
-      font-size: 17px;
+    &:hover {
+      color: aliceblue;
       text-decoration: underline;
-      padding-left: 15px;
     }
+    &:visited {
+      color: $neutral-gray;
+    }
+    &:active {
+      color: aliceblue;
+    }
+  }
+}
+
+.navbar-right {
+  padding-left: 25%;
+  .navbar-brand-modified {
+    font-size: 17px;
+    text-decoration: underline;
+    padding-left: 15px;
   }
 }
 
@@ -85,14 +77,16 @@ form {
 
 #post-it {
   background-image: url(../img/postit.png);
-  height: 100%;
+  height: auto;
+  width: 100%;
   background-repeat: no-repeat;
   p {
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 3%;
     padding-right: 10%;
     padding-bottom: 5px;
     font-family: cursive;
+    text-align: justify;
   }
 }
 .center-button {
@@ -106,23 +100,46 @@ footer {
   .navbar-brand {
     color: black;
     font-size: 16px;
+    a {
+      background-color: transparent;
+      text-decoration: none;
+      color: $blue-grayer;
+    }
     a:hover {
       background-color: transparent;
       text-decoration: none;
-      color: blue;
-    }
-    &:visited {
-      color: black;
+      color: skyblue;
     }
   }
 
   .navbar-brand-2 {
-      font-size: 11px;
+    font-size: 11px;
+    a {
+      background-color: transparent;
+      text-decoration: none;
+      color: $blue-grayer;
+    }
+    a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: skyblue;
+    }
     }
   .msg-coffee {
-    text-decoration: underline;
+    text-decoration: none;
     padding-top: 15px;
     padding-bottom: 5px;
+    font-size: 1em;
+    a {
+      background-color: transparent;
+      text-decoration: underline;
+      color: $blue-grayer;
+    }
+    a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      color: skyblue;
+    }
   }
 }
 
@@ -134,4 +151,17 @@ footer {
   text-decoration: underline;
   padding-top: 10px;
   font-size: 15px;
+  a {
+      background-color: transparent;
+      text-decoration: underline;
+      color: $blue-grayer;
+    }
+    a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      color: skyblue;
+    }
+  img {
+    width: 50%;
+  }
 }

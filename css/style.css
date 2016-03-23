@@ -7,33 +7,29 @@ body {
 
 .pict-background {
   background-color: #43688c;
-  border-color: #43686a;
+  border-color: #53989a;
   border-bottom-style: dashed;
   padding-bottom: 1%; }
 
 .navbar-brand-modified {
-  color: aliceblue;
   font-size: 35px;
   background-color: transparent; }
-  .navbar-brand-modified a:hover {
-    color: azure; }
-  .navbar-brand-modified a:visited {
-    color: #dcdcdc; }
-  .navbar-brand-modified a:active {
+  .navbar-brand-modified a {
     color: aliceblue; }
+    .navbar-brand-modified a:hover {
+      color: aliceblue;
+      text-decoration: underline; }
+    .navbar-brand-modified a:visited {
+      color: #dcdcdc; }
+    .navbar-brand-modified a:active {
+      color: aliceblue; }
 
-.col-md-1 .container-fluid {
-  padding-top: 15%;
-  margin-left: -5%; }
-
-.col-md-10 {
-  padding-left: 20%; }
-  .col-md-10 .container-fluid {
-    padding-top: 5%; }
-    .col-md-10 .container-fluid .navbar-brand-modified {
-      font-size: 17px;
-      text-decoration: underline;
-      padding-left: 15px; }
+.navbar-right {
+  padding-left: 25%; }
+  .navbar-right .navbar-brand-modified {
+    font-size: 17px;
+    text-decoration: underline;
+    padding-left: 15px; }
 
 #logo {
   float: left;
@@ -53,14 +49,16 @@ form #canvas-error {
 
 #post-it {
   background-image: url(../img/postit.png);
-  height: 100%;
+  height: auto;
+  width: 100%;
   background-repeat: no-repeat; }
   #post-it p {
-    padding-top: 10%;
+    padding-top: 15%;
     padding-left: 3%;
     padding-right: 10%;
     padding-bottom: 5px;
-    font-family: cursive; }
+    font-family: cursive;
+    text-align: justify; }
 
 .center-button {
   padding-left: 25%; }
@@ -70,18 +68,37 @@ footer {
   footer .navbar-brand {
     color: black;
     font-size: 16px; }
+    footer .navbar-brand a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #43688c; }
     footer .navbar-brand a:hover {
       background-color: transparent;
       text-decoration: none;
-      color: blue; }
-    footer .navbar-brand:visited {
-      color: black; }
+      color: skyblue; }
   footer .navbar-brand-2 {
     font-size: 11px; }
+    footer .navbar-brand-2 a {
+      background-color: transparent;
+      text-decoration: none;
+      color: #43688c; }
+    footer .navbar-brand-2 a:hover {
+      background-color: transparent;
+      text-decoration: none;
+      color: skyblue; }
   footer .msg-coffee {
-    text-decoration: underline;
+    text-decoration: none;
     padding-top: 15px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    font-size: 1em; }
+    footer .msg-coffee a {
+      background-color: transparent;
+      text-decoration: underline;
+      color: #43688c; }
+    footer .msg-coffee a:hover {
+      background-color: transparent;
+      text-decoration: underline;
+      color: skyblue; }
 
 .aplicativos {
   padding-bottom: 10px;
@@ -89,5 +106,15 @@ footer {
   text-decoration: underline;
   padding-top: 10px;
   font-size: 15px; }
+  .aplicativos a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #43688c; }
+  .aplicativos a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: skyblue; }
+  .aplicativos img {
+    width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
