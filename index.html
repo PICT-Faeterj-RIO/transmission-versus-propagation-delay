@@ -3,9 +3,9 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    
+
     <title>PICT - Atraso de transmissão e propagação</title>
-    
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
         </div>
-    </nav> 
+    </nav>
 
     <div class="jumbotron">
       <div class="container-fluid">
@@ -167,12 +167,18 @@
           <div class="container-fluid">
             <div id="post-it">
               <p>
-                Teste, testeTeste, testeTeste, teste<br>
-                 testeTeste, testeTeste, testeTeste,<br>
-                 testeTeste, testeTeste, testeTeste, <br>
-                 Teste, testeTeste, testeTeste, teste<br>
-                 testeTeste, testeTeste, testeTeste,<br>
-                 testeTeste, testeTeste, testeTeste, <br>
+                O atraso de transmissão é o tempo que o <br>
+                pacote leva pra “sair do roteador e ir ao<br>
+                meio de transporte”<br>
+                O atraso de propagação é o tempo que o <br>
+                pacote leva para chegar ao seu destino.<br>
+                <strong>Fórmulas:</strong><br>
+                <span class="formula-style">
+                  Atraso de Transmissão = Tamanho/Velocidade<br>
+                  Atraso de Propagação = Distância / Índice<br>
+                  Atraso Total = transmissão + propagação<br>
+                  (desconsiderando os atrasos de fila e de processamento)
+                </span>
               </p>
             </div>
           </div>
@@ -207,7 +213,7 @@
         </span>
       </div>
     </footer>
-    
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -215,3 +221,9 @@
     <script src="js/animacao.js"></script>
   </body>
 </html>
+
+<style>
+.formula-style {
+  font-size: 0.7em;
+}
+</style>
