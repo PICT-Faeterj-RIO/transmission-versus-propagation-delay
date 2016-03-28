@@ -8,6 +8,8 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    
   </head>
 
   <body>
@@ -129,6 +131,7 @@
 
                       imagem.src = 'img/cenario2.png';
 
+											
                       imagem.onload = function() {
                         context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
                       }
@@ -165,7 +168,7 @@
         </div>
         <div class="col-md-5">
           <div class="container-fluid">
-            <div id="post-it">
+            <div class="post-it">
               <p>
                 O atraso de transmissão é o tempo que o <br>
                 pacote leva pra “sair do roteador e ir ao<br>
@@ -221,9 +224,3 @@
     <script src="js/animacao.js"></script>
   </body>
 </html>
-
-<style>
-.formula-style {
-  font-size: 0.7em;
-}
-</style>

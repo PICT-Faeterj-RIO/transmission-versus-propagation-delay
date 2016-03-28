@@ -75,20 +75,6 @@ form {
 
 // Campo texto
 
-#post-it {
-  background-image: url(../img/postit.png);
-  height: auto;
-  width: 100%;
-  background-repeat: no-repeat;
-  p {
-    padding-top: 15%;
-    padding-left: 3%;
-    padding-right: 10%;
-    padding-bottom: 5px;
-    font-family: cursive;
-    text-align: justify;
-  }
-}
 .center-button {
   padding-left: 25%;
 }
@@ -164,4 +150,22 @@ footer {
   img {
     width: 50%;
   }
+}
+
+.post-it {
+  background-image: url(../img/postit.png);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  p {
+    padding-top: 15%;
+    padding-left: 3%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    font-family: cursive;
+    text-align: justify;
+  }
+}
+
+.formula-style {                                         	font-size: 0.7em;                
 }
