@@ -9,6 +9,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.js"></script>
 
   </head>
 
@@ -152,45 +153,47 @@
                         context.drawImage(imagem3, 25, 130, 40, 40);
                       }
                     }
-                 </script>
-
+                  </script>
                </canvas>
              </div>
-
-             <input type="button" value="Limpar" onclick="resetar();" class="btn btn-danger">
-             <input type="button" value="Começar" onclick="calcular()" class="btn btn-primary">
-
+             <div class="text-center">
+               <a class="btn-ctrl">
+                 <img src="img/btn_play.png" onclick="calcular()">
+               </a>
+               <a class="btn-ctrl">
+                 <img src="img/btn_reset.png" onclick="resetar()">
+               </a>
+             </div>
            </div>
           </form>
           <p id="resultado" class="resultado"></p>
         </div>
         <div class="col-md-5">
-          <div class="container-fluid">
-            <div class="post-it">
-              <p>
-                O atraso de transmissão é o tempo que o <br>
-                pacote leva pra “sair do roteador e ir ao<br>
-                meio de transporte”<br>
-                O atraso de propagação é o tempo que o <br>
-                pacote leva para chegar ao seu destino.<br>
-                <strong>Fórmulas:</strong><br>
-                <span class="formula-style">
-                  Atraso de Transmissão = Tamanho/Velocidade<br>
-                  Atraso de Propagação = Distância / Índice<br>
-                  Atraso Total = transmissão + propagação<br>
-                  (desconsiderando os atrasos de fila e de processamento)
-                </span>
-              </p>
-            </div>
-          </div>
-          <br>
-          <div class="center-button">
-            <a href="https://drive.google.com/file/d/0B0HGBFjJTIA_R3NvczNGRDdTOFU/view" target="_blank"><button type="button" class="btn btn-danger">Leia mais aqui!</button></a>
-          </div>
-        </div>
-      </div>
+           <div class="post-it">
+             <p>
+               O atraso de transmissão é o tempo que o <br>
+               pacote leva pra “sair do roteador e ir ao<br>
+               meio de transporte”<br>
+               O atraso de propagação é o tempo que o <br>
+               pacote leva para chegar ao seu destino.<br>
+               <strong>Fórmulas:</strong><br>
+               <span class="formula-style">
+                 Atraso de Transmissão = Tamanho/Velocidade<br>
+                 Atraso de Propagação = Distância / Índice<br>
+                 Atraso Total = transmissão + propagação<br>
+                 (desconsiderando os atrasos de fila e de processamento)
+               </span>
+             </p>
+           </div>
+         </div>
+         <br>
+         <div class="center-button">
+           <a href="https://drive.google.com/file/d/0B0HGBFjJTIA_R3NvczNGRDdTOFU/view" target="_blank"><button type="button" class="btn btn-danger">Leia mais aqui!</button></a>
+         </div>
+     </div>
     </div>
 
+    <br><br>
 
     <footer class="navbar navbar-default footer" role="navigation">
       <div class="container">
@@ -210,12 +213,11 @@
            </small>
         </div>
         <span  class="msg-coffee col-md-12 text-center">
-          <a href="#" target="_blank">Quer fazer um Desenvolvedor feliz? <button type="button" class="btn btn-info">Doe um café!</button></a>
+          <a href="#" target="_blank"><img src="img/btn_cafe.png" height="70" width="300"></a>
         </span>
       </div>
     </footer>
 
-    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <script src="js/script.js"></script>

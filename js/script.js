@@ -57,6 +57,12 @@ function calcular()
   document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs ou " +
   transmissao + " segs. <br>" + "Atraso de propagação: " + prop_cien + " segs ou " + propagacao + " segs. <br>" +
   "Atraso total: " + atrasototal_cien + " segs ou " + atrasototal + " segs. <br>";
+
+  $('.resultado').addClass('resultado--mostrar');
+  $('.btn-ctrl').on("click", function(event) {
+    event.preventDefault();
+  });
+
 }
 
 function posicao(pacote)
