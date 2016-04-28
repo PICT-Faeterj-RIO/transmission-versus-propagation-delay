@@ -1,3 +1,7 @@
+var transmissao;
+var propagacao;
+var T; var P;
+
 function calcular()
 {
   resetar();
@@ -37,18 +41,22 @@ function calcular()
   //transforma a distância de km para m
   distancia=distancia*1E3;
 
-  var transmissao=tampacote/velpacote;
+  transmissao=tampacote/velpacote;
   var trans_cien=converter(transmissao);
 
-  var propagacao=distancia/indice;
+  propagacao=distancia/indice;
   var prop_cien=converter(propagacao);
 
   var atrasototal=transmissao+propagacao;
   var atrasototal_cien=converter(atrasototal);
 
-  play();
-  document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs. <br>" +
-  "Atraso de propagação: " + prop_cien + " segs. <br>" + "Atraso total: " + atrasototal_cien + " segs."
+  T = calcular_velocidade(transmissao);
+  P = calcular_velocidade(propagacao);
+  timer = setInterval(mover,T);
+
+  document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs ou " +
+  transmissao + " segs. <br>" + "Atraso de propagação: " + prop_cien + " segs ou " + propagacao + " segs. <br>" +
+  "Atraso total: " + atrasototal_cien + " segs ou " + atrasototal + " segs. <br>";
 }
 
 function posicao(pacote)
@@ -72,4 +80,9 @@ function converter(pacote)
   var b = a.substring(cont+1,a.length) + "x10^-" + x;
 
   return b;
+}
+
+function calcular_velocidade(atraso){
+  var R = 1000 * atraso;
+  return R;
 }
