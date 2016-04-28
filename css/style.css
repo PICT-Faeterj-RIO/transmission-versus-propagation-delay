@@ -47,19 +47,6 @@ form #canvas-error {
   font-size: 26px;
   align-content: center; }
 
-#post-it {
-  background-image: url(../img/postit.png);
-  height: auto;
-  width: 100%;
-  background-repeat: no-repeat; }
-  #post-it p {
-    padding-top: 15%;
-    padding-left: 3%;
-    padding-right: 10%;
-    padding-bottom: 5px;
-    font-family: cursive;
-    text-align: justify; }
-
 .center-button {
   padding-left: 25%; }
 
@@ -116,5 +103,21 @@ footer {
     color: skyblue; }
   .aplicativos img {
     width: 50%; }
+
+.post-it {
+  background-image: url(../img/postit.png);
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat; }
+  .post-it p {
+    padding-top: 15%;
+    padding-left: 3%;
+    padding-right: 10%;
+    padding-bottom: 5px;
+    font-family: cursive;
+    text-align: justify; }
+
+.formula-style {
+  font-size: 0.7em; }
 
 /*# sourceMappingURL=style.css.map */
