@@ -9,7 +9,7 @@ function mover_situ1() {
     context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
     context.drawImage(imagem3, situacao1_pacote1, 130, 40, 40);
     context.drawImage(roteador, 100, 98, 120, 100);
-    context.drawImage(roteador, 450, 98, 120, 100)
+    context.drawImage(roteador, 450, 98, 120, 100);
     if(situacao1_pacote1>=120){
       stop();
       timer = setInterval(mover2_situ1,T);
@@ -22,7 +22,7 @@ function mover2_situ1() {
   context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
   context.drawImage(imagem3, situacao1_pacote4, 130, 40, 40);
   context.drawImage(roteador, 100, 98, 120, 100);
-  context.drawImage(roteador, 450, 98, 120, 100)
+  context.drawImage(roteador, 450, 98, 120, 100);
   if(situacao1_pacote4>=200){
     stop();
     timer = setInterval(mover3_situ1,P);
@@ -35,7 +35,7 @@ function mover3_situ1() {
   context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
   context.drawImage(imagem2, situacao1_pacote2, 130, 40, 40);
   context.drawImage(roteador, 100, 98, 120, 100);
-  context.drawImage(roteador, 450, 98, 120, 100)
+  context.drawImage(roteador, 450, 98, 120, 100);
   if(situacao1_pacote2>=canvas.width-232)
   {
     stop();
@@ -50,7 +50,7 @@ function mover4_situ1(){
   context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
   context.drawImage(imagem3, situacao1_pacote3, 130, 40, 40);
   context.drawImage(roteador, 100, 98, 120, 100);
-  context.drawImage(roteador, 450, 98, 120, 100)
+  context.drawImage(roteador, 450, 98, 120, 100);
   if(situacao1_pacote3>=canvas.width-50){
     stop();
   }
