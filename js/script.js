@@ -4,7 +4,6 @@ var T; var P;
 
 function calcular()
 {
-  resetar();
   var pacote = document.getElementById("tampacote").value; //tamanho do pacote
   var velocidade = document.getElementById("vel").value; // velocidade transmissão
   var distancia = document.getElementById("dist").value; // distância total que o pacote irá percorrer

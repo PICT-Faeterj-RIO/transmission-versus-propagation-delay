@@ -66,7 +66,6 @@ function stop(){
 
 function mudar_situ(){
   if(situ==1){
-    var imagem = new Image();
 
     imagem.src = 'img/cenario1.png';
 
@@ -74,15 +73,11 @@ function mudar_situ(){
       context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
     }
 
-    var imagem2 = new Image();
-
     imagem2.src= 'img/pacote.png';
 
     imagem2.onload = function() {
       context.drawImage(imagem2, 25, 130, 40, 40);
     }
-
-    var imagem3 = new Image();
 
     imagem3.src= 'img/pacote.png';
 
@@ -92,24 +87,17 @@ function mudar_situ(){
   }
 
   if(situ==2){
-    var imagem = new Image();
-
     imagem.src = 'img/cenario2.png';
-
 
     imagem.onload = function() {
       context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
     }
-
-    var imagem2 = new Image();
 
     imagem2.src= 'img/caminhao.png';
 
     imagem2.onload = function() {
       context.drawImage(imagem2, 100, 116, 96, 64);
     }
-
-    var imagem3 = new Image();
 
     imagem3.src= 'img/pacote.png';
 
