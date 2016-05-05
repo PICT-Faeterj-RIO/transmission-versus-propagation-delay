@@ -8,7 +8,7 @@ $neutral-gray: #dcdcdc;
 
 body {
   background-color: $neutral-gray;
-  background-size: auto;
+
 }
 
 .pict-background {
@@ -154,20 +154,20 @@ footer {
 
 .post-it {
   background-image: url(../img/postit.png);
-  height: 120%;
-  width: 120%;
   background-repeat: no-repeat;
-  p {
-    padding: 2%;
+  .parag {
+    margin: 2%;
     padding-top: 5%;
+    width: 90%;
     font-family: cursive;
     text-align: justify;
     font-size: 1em;
+    letter-spacing: -1px;
   }
 }
 
 .formula-style {
-  font-size: 0.7em;
+  font-size: 1.1em;
 }
 
 .resultado {

@@ -2,8 +2,7 @@
  @Style.scss
  */
 body {
-  background-color: #dcdcdc;
-  background-size: auto; }
+  background-color: #dcdcdc; }
 
 .pict-background {
   background-color: #43688c;
@@ -106,18 +105,18 @@ footer {
 
 .post-it {
   background-image: url(../img/postit.png);
-  height: 120%;
-  width: 120%;
   background-repeat: no-repeat; }
-  .post-it p {
-    padding: 2%;
+  .post-it .parag {
+    margin: 2%;
     padding-top: 5%;
+    width: 90%;
     font-family: cursive;
     text-align: justify;
-    font-size: 1em; }
+    font-size: 1em;
+    letter-spacing: -1px; }
 
 .formula-style {
-  font-size: 0.7em; }
+  font-size: 1.1em; }
 
 .resultado--mostrar {
   border: 2px solid #aa0000;
