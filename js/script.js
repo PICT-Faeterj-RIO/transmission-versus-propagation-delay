@@ -51,7 +51,7 @@ function calcular()
 
   T = calcular_velocidade(transmissao);
   P = calcular_velocidade(propagacao);
-  timer = setInterval(mover,T);
+  mover();
 
   document.getElementById('resultado').innerHTML="Atraso de transmissão: " + trans_cien + " segs ou " +
   transmissao + " segs. <br>" + "Atraso de propagação: " + prop_cien + " segs ou " + propagacao + " segs. <br>" +
