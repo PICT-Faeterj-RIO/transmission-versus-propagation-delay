@@ -4,5 +4,5 @@ $(".btn-cenario").on("click", function() {
   } else {
     situ = 1
   }
-  resetar();
+  mudar_situ();
 });
