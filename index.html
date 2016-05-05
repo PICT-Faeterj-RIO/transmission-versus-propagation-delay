@@ -104,6 +104,8 @@
                     var imagem = new Image();
                     var imagem2 = new Image();
                     var imagem3 = new Image();
+                    var imagem4 = new Image();
+                    var roteador = new Image();
 
                     if(situ==1){
 
@@ -123,6 +125,15 @@
 
                       imagem3.onload = function() {
                         context.drawImage(imagem3, 25, 130, 40, 40);
+                      }
+
+                      imagem4.src= 'img/pacote.png';
+
+                      roteador.src= 'img/roteador.png';
+
+                      roteador.onload = function() {
+                        context.drawImage(roteador, 100, 98, 120, 100);
+                        context.drawImage(roteador, 450, 98, 120, 100)
                       }
                     }
 
