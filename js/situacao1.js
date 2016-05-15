@@ -23,6 +23,7 @@ function mover2_situ1() {
   context.drawImage(imagem3, situacao1_pacote4, 130, 40, 40);
   context.drawImage(roteador, 100, 98, 120, 100);
   context.drawImage(roteador, 450, 98, 120, 100);
+  context.drawImage(setatrans, 130, 40, 150,100);
   if(situacao1_pacote4>=200){
     stop();
     timer = setInterval(mover3_situ1,P);
@@ -36,6 +37,7 @@ function mover3_situ1() {
   context.drawImage(imagem2, situacao1_pacote2, 130, 40, 40);
   context.drawImage(roteador, 100, 98, 120, 100);
   context.drawImage(roteador, 450, 98, 120, 100);
+  context.drawImage(setaprop, 250, 40, 150,100);
   if(situacao1_pacote2>=canvas.width-232)
   {
     stop();
