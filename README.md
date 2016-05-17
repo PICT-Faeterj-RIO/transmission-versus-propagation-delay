@@ -14,3 +14,8 @@
 - Beatriz Lima
 - Raquel Davino
 - João Marcus Fernandes
+
+##TODO:
+- Limpar styles inline
+  - Linha 102
+  - Linha 179
