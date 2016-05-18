@@ -45,19 +45,17 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <div class="col-md-6">
-            <!-- Adicionar Uma imagem -->
+    <div class="jumbotron" id="jumbotronprincipal">
+        <div class="col-md-4">
+            <img src="img/logo.png"/>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <h3 class="text-center">Atraso de Propagação x Transmissão</h3>
             <hr style="border: 1px ridge black">
         </div>
-        <br><br><br>
-      </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="principal">
       <div class="row">
         <div class="col-md-7">
           <form role="form">
@@ -121,19 +119,19 @@
                         context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
                       }
 
-                      imagem2.src= 'img/pacote.png';
+                      imagem2.src= 'img/cartinha.png';
 
                       imagem2.onload = function() {
                         context.drawImage(imagem2, 25, 145, 40, 40);
                       }
 
-                      imagem3.src= 'img/pacote.png';
+                      imagem3.src= 'img/cartinha.png';
 
                       imagem3.onload = function() {
                         context.drawImage(imagem3, 25, 145, 40, 40);
                       }
 
-                      imagem4.src= 'img/pacote.png';
+                      imagem4.src= 'img/cartinha.png';
 
                       roteador.src= 'img/roteador.png';
 
@@ -184,26 +182,17 @@
         </div>
         <div class="col-md-4 col-post" align="center">
            <div class="post-it">
-             <div class="parag">
-               <strong>Fórmulas:</strong><br>
-               <span class="formula-style">
-                 Atraso de Transmissão = Tamanho/Velocidade<br>
-                 Atraso de Propagação = Distância / Índice<br>
-                 Atraso Total = transmissão + propagação<br>
-                 (desconsiderando os atrasos de fila e de processamento)
-               </span>
-             </div>
            </div>
            <br>
-           <a href="https://drive.google.com/file/d/0B0HGBFjJTIA_R3NvczNGRDdTOFU/view" target="_blank"><button type="button" class="btn btn-danger">Saiba mais!</button></a>
+           <a href="https://drive.google.com/file/d/0B0HGBFjJTIA_R3NvczNGRDdTOFU/view" target="_blank"><img src="img/entenda.jpg" width="150px"/></a>
          </div>
      </div>
     </div>
 
-    <br><br><br><br>
+    <br><br>
 
-    <footer class="navbar navbar-default footer" role="navigation">
-      <div class="row" style="width: 100%">
+    <footer class="navbar navbar-static-bottom navbar-default footer" role="navigation">
+      <div class="container">
         <div class="col-md-6">
           <div class="navbar-header">
             <strong class="navbar-brand"><a href="http://www.faeterj-rio.edu.br/" target="_blank">FAETERJ-Rio, </a>

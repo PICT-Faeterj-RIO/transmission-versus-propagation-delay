@@ -43,19 +43,19 @@ function mudar_situ(){
       context.drawImage(imagem, 0, 0, canvas.width, canvas.height);
     }
 
-    imagem2.src= 'img/pacote.png';
+    imagem2.src= 'img/cartinha.png';
 
     imagem2.onload = function() {
       context.drawImage(imagem2, 25, 145, 40, 40);
     }
 
-    imagem3.src= 'img/pacote.png';
+    imagem3.src= 'img/cartinha.png';
 
     imagem3.onload = function() {
       context.drawImage(imagem3, 25, 145, 40, 40);
     }
 
-    imagem4.src= 'img/pacote.png';
+    imagem4.src= 'img/cartinha.png';
 
     roteador.src= 'img/roteador.png';
 
