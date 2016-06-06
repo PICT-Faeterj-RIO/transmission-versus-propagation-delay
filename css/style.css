@@ -191,4 +191,16 @@ footer {
       padding:40px 0 0 0;
     }
   }
+
+  #saibamais{
+    background-color:white;
+  }
+
+  .saibamais{
+    margin:20px 150px 0 150px;
+  }
+
+  .saibamais p{
+    text-align:justify;
+  }
 /*# sourceMappingURL=style.css.map */
