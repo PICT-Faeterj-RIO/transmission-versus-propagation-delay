@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>PICT - Saiba Mais</title>
+
+    <title>PICT - Saiba mais</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
+
   <body id="saibamais">
+    <nav class="navbar navbar-default pict-background">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand-modified" href="index.html" target="_self">PICT</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="navbar-modified">
+                        <a href="quemsomos.html" class="navbar-brand-modified" target="_self">Quem somos</a>
+                    </li>
+                    <li class="navbar-modified">
+                        <a href="#" class="navbar-brand-modified" target="_self">Documentação</a>
+                    </li>
+                    <li class="navbar-modified">
+                        <a href="aplicativos.html" class="navbar-brand-modified"
+                target="_self">Aplicativos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="jumbotronprincipal" style="margin-top:-20px;">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-2">
+            <img src="img/logo.png"/>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-5" id="jumbotronprincipaltexto">
+            <h3 class="text-center">Atraso de Propagação x Transmissão</h3>
+            <hr style="border: 1px ridge black">
+        </div>
+      </div>
+    </div>
+
     <div class="saibamais">
       <div>
         <h2>Tipos de Atraso</h2>
@@ -52,7 +103,7 @@
           Caracteriza-se pelo tempo para propagar os bits do pacote do roteador A ao B. O bit se propaga à velocidade de
           propagação do enlace, que depende do meio físico.
         </p>
-        <img src="img/prop.png"/>
+        <img src="img/propagacao.png"/>
       </div>
       <div>
         <h2>Atraso de transmissão X Atraso de propagação</h2>
@@ -72,5 +123,27 @@
         </p>
       </div>
     </div>
+
+    <footer class="navbar navbar-static-bottom navbar-default" role="navigation">
+      <div class="container">
+        <div class="col-md-6">
+          <div class="navbar-header">
+            <strong class="navbar-brand"><a href="http://www.faeterj-rio.edu.br/" target="_blank">FAETERJ-Rio, </a>
+            <a href="index.html" target="_self">PICT</a></strong>
+          </div>
+        </div>
+        <div class="col-md-6" align="right">
+          <small class="navbar-brand-2">
+             <ul class="list-inline">
+                <li><a href="#" target="_blank">Documentação</a></li>
+		        <li><a href="https://github.com/PICT-Faeterj-RIO" target="_blank">Github</a></li>
+              </ul>
+           </small>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   </body>
 </html>
