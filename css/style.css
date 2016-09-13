@@ -187,9 +187,33 @@ footer {
     }
 
     #jumbotronprincipaltexto{
-      padding:40px 0 0 0;
+      padding:40px 40px 0 0;
     }
   }
+
+  @media screen and (min-width: 1800px){
+      #jumbotronprincipal img{
+        width: 400px;
+        padding:20px 0 0 70px;
+      }
+
+      #jumbotronprincipaltexto{
+        padding: 40px 142px 0 0;
+      }
+
+      #tampacote, #vel, #dist{
+        width: 250px;
+      }
+
+      #alinha{
+        margin-right:-40px;
+      }
+
+      #alinhamento{
+        margin-left: 98px;
+      }
+  }
+
 
   #saibamais{
     background-image: url(../img/background_entenda.jpg);
