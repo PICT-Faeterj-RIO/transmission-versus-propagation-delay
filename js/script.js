@@ -5,6 +5,7 @@ var T; var P;
 function calcular()
 {
   resetar();
+  mostrar_resultado('resultado');
   var pacote = document.getElementById("tampacote").value; //tamanho do pacote
   var velocidade = document.getElementById("vel").value; // velocidade transmissão
   var distancia = document.getElementById("dist").value; // distância total que o pacote irá percorrer
@@ -91,4 +92,14 @@ function converter(pacote)
 function calcular_velocidade(atraso){
   var R = 1000 * atraso;
   return R;
+}
+
+function esconder_resultado(result){
+  var el = document.getElementById(result);
+    el.style.display = 'none';
+}
+
+function mostrar_resultado(result){
+  var el = document.getElementById(result);
+    el.style.display = 'block';
 }
