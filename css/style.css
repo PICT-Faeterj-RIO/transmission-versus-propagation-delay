@@ -13,7 +13,7 @@
 .navbar-brand-modified {
   font-size: 35px;
   background-color: transparent;
-  margin-left:12px;}
+  margin-left:8px;}
   .navbar-brand-modified a {
     color: aliceblue; }
     .navbar-brand-modified a:hover {
@@ -31,6 +31,14 @@
     font-size: 17px;
     text-decoration: underline;
     padding-left: 15px; }
+
+#titulo{
+  font-family: cursive;
+}
+
+#imagens img{
+  border-radius: 10px;
+}
 
 #logo {
   float: left;
