@@ -1,21 +1,16 @@
-#Transmission versus propagation delay
+# Transmission versus propagation delay
 
 ---
 
-##PICT - FAETERJ-Rio
+## PICT - FAETERJ-Rio
 
     Applet para cálculo de atraso de propagação e transmissão.
 
 
 
-##Time:
+## Time:
 - Maria Cláudia Roenick
 - Roberto Cardoso
 - Beatriz Lima
 - Raquel Davino
 - João Marcus Fernandes
-
-##TODO:
-- Limpar styles inline
-  - Linha 102
-  - Linha 179
