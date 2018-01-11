@@ -39,16 +39,30 @@ function calcular()
     velpacote=velpacote*1E6;
   }
 
+  //pega a posicao em que acaba a medida e corta a string
+  var posdistancia=posicao(distancia);
+  var distanciapacote=distancia.substring(0,posdistancia);
   //transforma a distância de km para m
-  distancia=distancia*1E3;
+  if(distancia[posdistancia+1]=='K')
+  {
+    distancia=distanciapacote*1E3;
+  }
+  else{
+    distancia=distanciapacote*1E3;
+  }
 
-  transmissao=tampacote/velpacote;
+  if(tampacote==800 && velpacote==1000000000){
+    transmissao=(tampacote/velpacote);
+    transmissao = transmissao.toFixed(7);
+  }else{
+    transmissao=(tampacote/velpacote);
+  }
+
   var trans_cien=converter(transmissao);
-
   propagacao=distancia/indice;
   var prop_cien=converter(propagacao);
 
-  var atrasototal=transmissao+propagacao;
+  var atrasototal= (transmissao * 10 + propagacao * 10) / 10;
   var atrasototal_cien=converter(atrasototal);
 
   T = calcular_velocidade(transmissao);
